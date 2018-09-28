@@ -1,0 +1,36 @@
+@import "partials/params-g";
+@import "partials/mixins";
+@import "header.scss";
+body {
+    @include clear;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    @include clear;
+}
+
+a {
+    text-decoration: none;
+}
+
+.view-port {
+    max-width: $global-view-port;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,9 @@
+@mixin clear {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin clear-list {
+    @include clear;
+    list-style: none;
+}
