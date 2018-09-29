@@ -1,1 +1,0 @@
-// export const testFunction = (a, b) => a.innerHTML = b;

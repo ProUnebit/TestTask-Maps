@@ -1,17 +1,15 @@
-@import "partials/params-g";
-@import "partials/mixins";
-.header {
-    // |---PARAMS-LOC---|
-    $main-bg: $global-cream;
-    $title-box-desc-text-color: $global-rifle-green;
-    $title-box-icons-color: $global-pearl-aqua;
-    $menu-box-bg: $global-pearl-aqua;
-    $menu-box-menu-burger-color: $global-platinum;
-    $menu-box-menu-bg: $global-pastel-orange;
-    $manu-box-menu-item-text-color: $global-white;
-    $menu-box-contact-text-color: $global-white;
-    // |---STYLES---|
-    &__content {
-        color: orange;
+    @import "partials/params-g";
+    @import "partials/mixins";
+    .header {
+        height: 50px;
+        background: linear-gradient(to left, lighten($global-pastel-orange, 8%), #F8A830);
+        &__content {
+            height: inherit;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            & h2 {
+                color: $global-dark-violet;
+            }
+        }
     }
-}

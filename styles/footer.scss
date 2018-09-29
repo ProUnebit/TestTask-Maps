@@ -1,0 +1,15 @@
+@import "partials/params-g";
+@import "partials/mixins";
+.footer {
+    height: 30px;
+    margin-top: auto;
+    background-color: lighten($global-pastel-orange, 10%);
+    &__content {
+        height: 30px;
+        line-height: 30px;
+        & h5 {
+            text-align: center;
+            color: $global-dark-violet;
+        }
+    }
+}

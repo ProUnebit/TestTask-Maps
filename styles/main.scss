@@ -1,0 +1,121 @@
+    @import "partials/params-g";
+    @import "partials/mixins";
+    .main {
+        margin: auto;
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+            .control-panel-box {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                &__content {
+                    height: calc(100% - 20px);
+                    display: grid;
+                    grid-gap: 20px;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 30% 70%;
+                }
+                &__section-1 {
+                    width: 100%;
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: lighten($global-pastel-orange, 22%);
+                    border: 2px solid $global-pastel-orange;
+                    border-radius: 5px;
+                }
+                &__loading-text {
+                    font-size: 18px;
+                    text-align: center;
+                    color: $global-taupe;
+                    background-color: lighten($global-pastel-orange, 12%);
+                    padding: 20px;
+                }
+                &__switcher-button {
+                    margin: auto;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    padding: 12px;
+                    background: transparent;
+                    color: $global-taupe;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    outline: none;
+                    border: solid 3px $global-pastel-orange;
+                    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: lighten($global-pastel-orange, 18%);
+                    }
+                    &:active {
+                        transform: translateY(2px);
+                        background-color: lighten($global-pastel-orange, 12%);
+                    }
+                }
+                &__section-2 {
+                    @extend .control-panel-box__section-1;
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                }
+                &__logo-container {
+                    display: flex;
+                    justify-content: center;
+                    background-color: lighten($global-pastel-orange, 12%);
+                }
+                &__logo {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: contain;
+                    padding: 10px;
+                }
+                &__filter {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 50px;
+                }
+                &__form-info-text {
+                    @extend .control-panel-box__loading-text;
+                    background-color: transparent;
+                    padding: 0 0 20px;
+                }
+                &__form-select {
+                    padding: 20px 10px 20px;
+                    outline: none;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-weight: 700;
+                    color: $global-taupe;
+                    background-color: lighten($global-pastel-orange, 27%);
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: lighten($global-pastel-orange, 30%);
+                    }
+                }
+                &__form-option {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    color: darkorange;
+                }
+            }
+            .map-box {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+                width: 1050px;
+                height: 600px;
+                overflow: hidden;
+                background-color: lighten($global-pastel-orange, 22%);
+                border: 2px solid $global-pastel-orange;
+                border-radius: 5px;
+                &__yandex-map {
+                    width: inherit;
+                    height: inherit;
+                }
+                &__2gis-map {
+                    visibility: hidden;
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
