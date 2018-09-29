@@ -1,3 +1,5 @@
+const DG = require('2gis-maps')
+
 const controlPanelLoadingText = document.querySelector('.control-panel-box__loading-text')
 const controlPanelSwitcherButton = document.querySelector('.control-panel-box__switcher-button')
 const controlPanelSelect = document.querySelector('.control-panel-box__form-select')
@@ -93,7 +95,8 @@ function init() {
 
             map = DG.map('map-2', {
                 center: [55.76, 37.64],
-                zoom: 12
+                zoom: 12,
+                skin: 'light'
             })
 
 
@@ -112,7 +115,7 @@ function init() {
                         .bindPopup(`
                         <di class="balloonContent">
                         <p style="margin-bottom: 5px;">${district.header}</p>
-                        <p>${district.points[i].address.address}</p>
+                        <p style="color: rgba(248, 194, 85, 1)">${district.points[i].address.address}</p>
                         </di>`)
                 }
             })

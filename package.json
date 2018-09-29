@@ -6,6 +6,7 @@
     "author": "Alexey Ratnikov",
     "license": "MIT",
     "dependencies": {
+        "2gis-maps": "^3.5.3",
         "autoprefixer": "^9.1.5",
         "babel-core": "^6.26.3",
         "babel-preset-env": "^1.7.0",
