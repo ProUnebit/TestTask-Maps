@@ -121,7 +121,7 @@ controlPanelSwitcherButton.addEventListener('click', function () {
         controlPanelSelect.style.cursor = 'not-allowed';
         mapBoxYandex.style.display = 'none';
         mapBox2gis.style.display = 'block';
-        controlPanelLogo.src = 'http://api.2gis.ru/assets/frontend/api/css/img/logo.svg';
+        controlPanelLogo.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c1/2GIS_logo.svg';
         displaySwitcher = true;
         return;
     } else if (displaySwitcher) {
@@ -259,7 +259,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '12283' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '14562' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

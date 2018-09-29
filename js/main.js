@@ -15,7 +15,7 @@ controlPanelSwitcherButton.addEventListener('click', () => {
         controlPanelSelect.style.cursor = 'not-allowed'
         mapBoxYandex.style.display = 'none'
         mapBox2gis.style.display = 'block'
-        controlPanelLogo.src = 'http://api.2gis.ru/assets/frontend/api/css/img/logo.svg'
+        controlPanelLogo.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c1/2GIS_logo.svg'
         displaySwitcher = true
         return;
     } else if (displaySwitcher) {
