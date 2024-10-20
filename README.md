@@ -1,5 +1,5 @@
 
-**Link:** [Demo](https://test-task-m24.netlify.com)
+**Link:** [Demo](https://test-task-m24.netlify.app)
 
 **Task:** Такой json:  https://www.m24.ru/special/js/projects/seasons-b.json
 
